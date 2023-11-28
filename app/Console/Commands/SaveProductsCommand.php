@@ -7,7 +7,7 @@ use App\ETL\Actions\SaveProductsAction;
 
 class SaveProductsCommand extends Command
 {
-    protected $signature = 'app:save-products {--category=}';
+    protected $signature = 'save-products {--url=}';
     protected $description = 'Save products of its corresponding category';
      
     private SaveProductsAction $action;

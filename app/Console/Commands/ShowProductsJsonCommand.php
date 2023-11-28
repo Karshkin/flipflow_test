@@ -7,7 +7,7 @@ use App\ETL\Actions\ShowProductsJsonAction;
 
 class ShowProductsJsonCommand extends Command
 {
-    protected $signature = 'app:show-products-json {--category=}';
+    protected $signature = 'show-products-json {--url=}';
     protected $description = 'Shows a JSON of products of its corresponding category';
      
     private ShowProductsJsonAction $action;
