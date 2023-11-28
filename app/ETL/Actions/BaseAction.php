@@ -12,9 +12,9 @@ class BaseAction
     {
         $client = new Client();
 
-        $website = $client->request('GET', $params['category']);
+        $website = $client->request('GET', $params['url']);
         
-        $url = parse_url($params['category']);
+        $url = parse_url($params['url']);
 
         $baseUrl = $url['scheme'].'/'.$url['host'];
 
